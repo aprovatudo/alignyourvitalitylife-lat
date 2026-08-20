@@ -2,76 +2,62 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Cebola & Alho Restaurante Caseiro Ltda</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI', Arial, sans-serif;background:#f5f6fa;color:#444;line-height:1.6}
-header{background:#ffffff;border-bottom:3px solid #3949ab;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
-header h1{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:900;color:#1a1a2e;letter-spacing:.02em}
+body{font-family:Calibri, 'Segoe UI', sans-serif;background:#fff;color:#2e1a00;line-height:1.7}
+header{padding:24px 40px;border-bottom:1px solid #e8d8c0;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Book Antiqua', Garamond, serif;font-size:1rem;font-weight:700;color:#2e1a00}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#3949ab;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
-nav a:hover{color:#283593}
-.hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
-.hero-left{background:#f5f6fa;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
-.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#3949ab;text-transform:uppercase;font-weight:700;margin-bottom:16px}
-.hero-left h2{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:2.6rem;font-weight:900;color:#1a1a2e;line-height:1.15;margin-bottom:20px}
-.hero-left h2 em{color:#3949ab;font-style:normal}
-.hero-left p{color:#444;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
-.hero-cta{display:inline-block;background:#3949ab;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
-.hero-cta:hover{background:#283593}
-.hero-right{background:#3949ab;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
-.hero-right h3{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
-.info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
-.info-item:last-child{border-bottom:none;padding-bottom:0}
-.info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-.info-value{font-size:1rem;font-weight:600}
-.section{max-width:960px;margin:72px auto;padding:0 40px}
-.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#3949ab;font-weight:700;margin-bottom:12px}
-.section h2{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1.7rem;font-weight:900;color:#1a1a2e;margin-bottom:40px}
-.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #e8eaf6}
-.srv-row:last-child{border-bottom:none}
-.srv-num{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:2rem;font-weight:900;color:#3949ab;opacity:.3;min-width:56px;line-height:1}
-.srv-body h4{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;color:#1a1a2e;margin-bottom:6px}
-.srv-body p{font-size:.9rem;color:#444;line-height:1.65}
-.sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
-.sobre-text p{color:#444;line-height:1.85;margin-bottom:16px}
-.stats-panel{background:#e8eaf6;border-left:4px solid #3949ab;padding:28px}
-.stats-panel p{font-size:.88rem;color:#444;margin-bottom:10px;line-height:1.5}
-.stats-panel p strong{color:#283593;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
-.contato-box{background:#e8eaf6;border-left:4px solid #3949ab;padding:32px;max-width:560px}
-.contato-box p{font-size:.95rem;color:#444;margin-bottom:12px;line-height:1.6}
-.contato-box a{color:#3949ab;text-decoration:none;font-weight:600}
-footer{background:#1a1a2e;color:#6677aa;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
+nav a{color:#5a4a30;text-decoration:none;font-size:.85rem}
+nav a:hover{color:#bf6800}
+.hero{max-width:720px;margin:80px auto;padding:0 40px;text-align:center}
+.hero-tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#bf6800;display:block;margin-bottom:20px}
+.hero h1{font-family:'Book Antiqua', Garamond, serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:#2e1a00;margin-bottom:20px}
+.hero h1 em{color:#bf6800;font-style:normal}
+.hero p{color:#5a4a30;font-size:1rem;line-height:1.85;margin-bottom:32px}
+.hero-cta{display:inline-block;border:2px solid #bf6800;color:#bf6800;padding:12px 36px;text-decoration:none;font-weight:600;font-size:.88rem;letter-spacing:.04em;transition:all .2s}
+.hero-cta:hover{background:#bf6800;color:white}
+.rule{border:none;border-top:1px solid #e8d8c0;margin:0 40px}
+.section{max-width:720px;margin:72px auto;padding:0 40px}
+.sec-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#bf6800;display:block;margin-bottom:10px}
+.section h2{font-family:'Book Antiqua', Garamond, serif;font-size:1.5rem;font-weight:700;color:#2e1a00;margin-bottom:40px;padding-bottom:12px;border-bottom:2px solid #bf6800}
+.srv-list{list-style:none}
+.srv-list li{padding:20px 0;border-bottom:1px solid #e8d8c0;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:baseline}
+.srv-list li:last-child{border-bottom:none}
+.srv-list strong{font-family:'Book Antiqua', Garamond, serif;font-size:.95rem;color:#2e1a00}
+.srv-list span{font-size:.88rem;color:#5a4a30;line-height:1.7}
+.sobre-text p{color:#5a4a30;line-height:1.9;margin-bottom:16px;font-size:.95rem}
+.meta-list{margin-top:36px;list-style:none}
+.meta-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e8d8c0;font-size:.88rem}
+.meta-list li:last-child{border-bottom:none}
+.meta-list .k{color:#5a4a30}
+.meta-list .v{color:#2e1a00;font-weight:600}
+.contato-info p{font-size:.9rem;color:#5a4a30;margin-bottom:10px;line-height:1.6}
+.contato-info a{color:#bf6800;text-decoration:none}
+footer{background:#fdf6ee}
+footer{color:#9a7a50;text-align:center;padding:32px 40px;font-size:.78rem;border-top:1px solid #e8d8c0}
+@media(max-width:600px){.srv-list li{grid-template-columns:1fr;gap:6px}nav{display:none}}
 </style></head><body>
-<header><h1>Cebola & Alho Restaurante Caseiro Ltda</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<header><span class="logo">Cebola & Alho Restaurante Caseiro Ltda</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Culinária Caseira · Sabor Autêntico · São Paulo</p>
-    <h2>Comida <em>caseira</em> que aquece a <em>alma</em> todos os dias</h2>
-    <p>Somos um restaurante especializado em receitas tradicionais, preparadas com ingredientes frescos e muito carinho. Atendemos clientes que buscam autenticidade, qualidade e o aconchego de uma refeição caseira.</p>
-    <a href="#contato" class="hero-cta">Falar com especialista</a>
-  </div>
-  <div class="hero-right">
-    <h3>Cebola & Alho Restaurante Caseiro Ltda</h3>
-    <div class="info-item"><div class="info-label">Fundação</div><div class="info-value">2023</div></div>
-    <div class="info-item"><div class="info-label">Localização</div><div class="info-value">Sao Paulo — SP</div></div>
-    
-    <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">51.705.412/0001-68</div></div>
-  </div>
+  <span class="hero-tag">Gastronomia · Tradição · Sabor Caseiro</span>
+  <h1>Autêntica culinária <em>caseira</em> em <em>São Paulo</em></h1>
+  <p>O Cebola & Alho oferece pratos tradicionais preparados com ingredientes frescos e técnicas que resgatam o sabor da comida feita em casa. Para quem busca refeições autênticas, saudáveis e repletas de memória afetiva.</p>
+  <a href="#contato" class="hero-cta">Agendar conversa</a>
 </div>
-<div id="servicos" class="section"><p class="section-label">Como atuamos</p><h2>Nossas áreas de expertise</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Almoço à La Carte</h4><p>Pratos variados de culinária caseira servidos diariamente com agilidade e qualidade.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Prato do Dia</h4><p>Receita especial renovada todos os dias, combinando tradição e temperos caseiros.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Refeições Executivas</h4><p>Opções práticas e nutritivas pensadas para profissionais em busca de conveniência.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Ambiente Acolhedor</h4><p>Espaço aconchegante que respira simplicidade e hospitalidade, perfeito para família e amigos.</p></div></div></div>
-<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Nossa empresa</h2>
-<div class="sobre-grid">
-  <div class="sobre-text"><p>O Cebola & Alho Restaurante Caseiro é um espaço dedicado a servir comida genuína, preparada com os mesmos cuidados de uma cozinha de família. Desde nossa fundação em São Paulo, trabalhamos para trazer à mesa de nossos clientes o sabor autêntico das receitas tradicionais.</p><p>Nosso diferencial está na seleção rigorosa de ingredientes frescos e no preparo artesanal de cada prato. Acreditamos que comida de qualidade, servida com atenção e carinho, cria memórias afetivas e aproxima as pessoas.</p></div>
-  <div class="stats-panel">
-    <p><strong>Razão Social</strong>Cebola & Alho Restaurante Caseiro Ltda</p>
-    <p><strong>CNPJ</strong>51.705.412/0001-68</p>
-    <p><strong>Estado</strong>São Paulo</p>
-    <p><strong>Situação</strong>✅ Ativa</p>
-  </div>
-</div></div>
-<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Fale conosco</h2>
-<div class="contato-box">
-  <p>Estamos disponíveis para apresentar nossas soluções.</p>
-  <p><strong>Telefone:</strong> <a href="tel:+551142277070">(11) 4227-7070</a></p><p><strong>Endereço:</strong> R. Ituverava, 618, Quinta Da Paineira, Sao Paulo — SP, CEP 03151-020</p>
-</div></div>
-<footer><span>Cebola & Alho Restaurante Caseiro Ltda — CNPJ 51.705.412/0001-68</span><span>© 2023–2026 Cebola & Alho Restaurante Caseiro Ltda</span></footer>
+<hr class="rule">
+<div id="servicos" class="section"><span class="sec-label">O que fazemos</span><h2>Nossas competências</h2><ul class="srv-list"><li><strong>Almoço à La Carte</strong><span>Menu variado de pratos caseiros preparados diariamente com ingredientes selecionados.</span></li><li><strong>Refeições Executivas</strong><span>Combinações práticas e nutritivas para profissionais que buscam qualidade no dia a dia.</span></li><li><strong>Pratos para Levar</strong><span>Deliciosas marmitas caseiras embaladas com cuidado para sua refeição onde estiver.</span></li><li><strong>Cardápio Especial</strong><span>Receitas exclusivas com inspiração regional que variam conforme a sazonalidade dos ingredientes.</span></li></ul></div>
+<hr class="rule">
+<div id="sobre" class="section"><span class="sec-label">Sobre a empresa</span><h2>Nossa trajetória</h2>
+<div class="sobre-text"><p>Desde sua fundação, o Cebola & Alho Restaurante Caseiro resgata a essência da gastronomia tradicional brasileira em um ambiente acolhedor no coração de São Paulo. Cada prato é preparado com dedicação, utilizando técnicas atemporais e ingredientes de qualidade que honram as receitas que atravessam gerações.</p><p>Nosso diferencial está no compromisso com a autenticidade e o cuidado artesanal em cada refeição. Acreditamos que comida caseira é mais do que nutrição: é conexão, conforto e história servida no prato.</p></div>
+<ul class="meta-list">
+  <li><span class="k">Razão Social</span><span class="v">Cebola & Alho Restaurante Caseiro Ltda</span></li>
+  <li><span class="k">CNPJ</span><span class="v">51.705.412/0001-68</span></li>
+  <li><span class="k">Estado</span><span class="v">São Paulo</span></li>
+  <li><span class="k">Fundação</span><span class="v">2023</span></li>
+  <li><span class="k">Situação</span><span class="v">✅ Ativa</span></li>
+</ul></div>
+<hr class="rule">
+<div id="contato" class="section"><span class="sec-label">Fale conosco</span><h2>Como nos encontrar</h2>
+<p style="color:#5a4a30;margin-bottom:24px;font-size:.95rem">Temos prazer em apresentar nossas soluções.</p>
+<div class="contato-info"><p><strong>Telefone:</strong> <a href="tel:+551142277070">(11) 4227-7070</a></p><p><strong>Endereço:</strong> R. Ituverava, 618, Quinta Da Paineira, Sao Paulo — SP, CEP 03151-020</p></div></div>
+<footer><p>Cebola & Alho Restaurante Caseiro Ltda · CNPJ 51.705.412/0001-68</p><p>© 2023–2026 Cebola & Alho Restaurante Caseiro Ltda. Todos os direitos reservados.</p></footer>
 </body></html>
